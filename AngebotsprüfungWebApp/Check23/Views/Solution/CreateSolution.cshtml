@@ -1,0 +1,60 @@
+﻿@model Check23.Models.Solution
+
+@{
+    ViewData["Title"] = "CreateSolution";
+}
+<head>
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#txt'
+        });
+    </script>
+</head>
+
+<h1>Neue Lösung erstellen</h1>
+
+<h2>@ViewBag.quoteEvalName</h2>
+<h3>@ViewBag.requirementName</h3>
+<h4>Lösung</h4>
+<hr />
+<div style="color:red ">@ViewBag.errorMessage</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProcessCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div style="display:flex">
+                <div class="form-group" style="margin-right:5px">
+                    <input type="submit" value="Erstellen" class="btn btn-dark" />
+                </div>
+                <div>
+                    <a href="javascript:history.back()" class="btn back">Abbrechen</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input id="txt" asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check" hidden="hidden">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsSelected" /> @Html.DisplayNameFor(model => model.IsSelected)
+                </label>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Requirement_id" class="control-label"></label>
+                <input asp-for="Requirement_id" class="form-control" value="@ViewBag.requirementId" />
+                <span asp-validation-for="Requirement_id" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

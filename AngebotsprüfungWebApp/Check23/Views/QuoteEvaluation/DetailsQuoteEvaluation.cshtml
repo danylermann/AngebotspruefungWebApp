@@ -1,0 +1,266 @@
+﻿@using Check23.Additional_Classes
+@model Check23.Models.QuoteEvaluation
+
+@{
+    ViewData["Title"] = "DetailsQuoteEvaluation";
+    StatusHelper statusHelper = new StatusHelper();
+    string colorBlue = "background-color:#d5eaff";
+    string colorGreen = "background-color:#d7f1c4";
+    bool isQuoteEvaluation;
+}
+
+
+<h1>@Model.Name</h1>
+
+<div>
+    @if (Model.OrderCategory == 1)
+    {
+        <h4>Angebotsprüfung</h4>
+        isQuoteEvaluation = true;
+    }
+    else
+    {
+        <h4>Entwicklungsauftrag</h4>
+        isQuoteEvaluation = false;
+    }
+    <hr />
+    <div style="white-space:nowrap">
+        @Html.ActionLink("Angtebotsprüfung bearbeiten", "EditQuoteEvaluation", new { quoteEvalId = Model.Id }, new { @class="btn btn-dark" }) 
+        @Html.ActionLink("Anforderung erstellen", "CreateRequirement", "Requirement", new { quoteEvalId = Model.Id, quoteEvalName = Model.Name }, new { @class = "btn btn-dark" })
+        @Html.ActionLink("Aktivitätsprotokoll anzeigen", "ActivityLog", Model.activityLog, new { @class = "btn btn-dark" })  @*Beim Übertragen von Daten mittels der RouteValues hat man 2 Optionen, entweder man erstellt ein neues routeValues Object bei dem man dann die benötigten Parameter festlegt die die Zielfunktion braucht
+        oder wenn man direkt Objekte überträgt braucht man nichts weiteres als dieses Objekt übergeben, wenn man wie immer new {} etc macht erstellt man stadtdessen ein neues Objekt und verliert seine Parameterwerte*@
+        <a asp-action="Index" class="btn back">Zurück zur Liste</a>
+    </div>
+    <p></p>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        @if (Model.Status == statusHelper.New)
+        {
+            <dd class="col-sm-10">
+                Neu                
+            </dd>
+        }
+        else if (Model.Status == statusHelper.FullyEstimated)
+        {
+            <dd class="col-sm-10" style="@colorBlue;margin:unset">
+                Abschätzungen vollständig                
+            </dd>
+        }
+        else if (Model.Status == statusHelper.ApprovalGranted)
+        {
+            <dd class="col-sm-10" style="@colorGreen;margin:unset">
+                Freigegeben     @ViewBag.approvalMessage
+            </dd>
+        }
+        @if(isQuoteEvaluation){
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Client_id)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.client.Name)
+            </dd>
+        }
+        @if (!string.IsNullOrEmpty(Model.ExternalContact) && isQuoteEvaluation)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ExternalContact)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ExternalContact)
+            </dd>
+        }
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Creator)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Creator)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        @if(!string.IsNullOrEmpty(Model.LegalGuidelines))
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.LegalGuidelines)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.Raw(Model.LegalGuidelines)
+            </dd>
+        }
+        <dt class="col-sm-2" style="border:none">
+            @Html.DisplayName("Anforderungen")
+        </dt>
+        <dd class="col-sm-10" style="border:none">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Beschreibung
+                        </th>
+                        <th>K Anf</th>
+                        <th>
+                            Lösungen
+                        </th>
+                        <th>Ausgewählt</th>
+                        <th>K Lö</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.requirements.Count != 0)
+                    {
+                        foreach (var requirement in Model.requirements)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.ActionLink(requirement.Name, "DetailsRequirement", "Requirement", new { requirementId = requirement.Id }, new { onmouseover = "MouseOver(this)", onmouseout = "MouseOut(this)", @class= "hyperlink" })
+                                </td>
+                                <td>
+                                    @Html.Raw(requirement.Description)
+                                </td>
+                                <td>@if (requirement.comments.Count() != 0)
+                                    {
+                                        <div>X</div>
+                                    }
+                                </td>
+                                <td>
+                                    @if (requirement.solutions.Count != 0)
+                                    {
+                                        foreach (var solution in requirement.solutions)
+                                        {
+                                            <p style="white-space:nowrap">
+                                                @Html.ActionLink(solution.Name, "DetailsSolution", "Solution", new { solutionId = solution.Id }, new { onmouseover = "MouseOver(this)", onmouseout = "MouseOut(this)", @class= "hyperlink"})
+                                            </p>
+                                        }
+                                    }
+                                    <p>@Html.ActionLink("Lösungsvorschlag hinzufügen", "CreateSolution", "Solution", new { requirementId = requirement.Id }, new { @class = "defaultbtn", style = "scale:0.9" })</p>
+                                </td>
+                                <td>
+                                    @foreach (var solution in requirement.solutions)
+                                    {
+                                        <p>@Html.DisplayFor(sol => solution.IsSelected)</p>
+                                    }                                    
+                                </td>
+                                <td>
+                                    @foreach (var solution in requirement.solutions)
+                                    {
+                                        @if (solution.comments.Count() != 0)
+                                        {
+                                            <p>X</p>
+                                        }
+                                    }
+                                </td>
+                                <td>                                    
+                                    @foreach (var solution in requirement.solutions)
+                                    {
+                                        <p style="white-space:nowrap;height:24px">
+                                            @Html.ActionLink("Abschätzen", "ChooseEstimation", "Estimation", new { solutionId = solution.Id }, new { @class = "defaultbtn" })
+                                            @if (Model.Status != statusHelper.ApprovalGranted)
+                                            {
+                                                int estimationStatus = 0;
+                                                @if (statusHelper.CheckFullyEstimated(requirement, solution.estimation)) { estimationStatus = 1; }
+                                                <button type="button" class="defaultbtn" onclick="ApproveOrAskForApproval(@estimationStatus, @solution.Id)">Lösung auswählen und Angebotsprüfung freigeben</button>
+                                            }
+                                        </p>                                     
+                                    }                                    
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+</div>
+<p></p>
+<div>
+    <div style="font-weight:bold">
+        Dateien
+    </div>
+    <div>
+        <form asp-action="UploadFile" enctype="multipart/form-data" method="post">
+            <input type="number" name="quoteEvalId" hidden="hidden" value="@Model.Id"/>
+            <input type="file" name="file" onchange="form.submit()" />
+            @* <button type="submit" class="defaultbtn">Datei hochladen</button> *@
+        </form>
+        @Html.ActionLink("Direkt zum Fileserver", "OpenExplorer", new { quoteEvalId = Model.Id }, new { @class = "defaultbtn" })
+        <div>
+            <p style="color:green">@ViewBag.fileUploadMessage</p>
+        </div>
+    </div>
+    <div>
+        <ul>
+            @foreach(DatabaseFile file in Model.files)
+            {
+                <li style="display:grid;grid-template-columns: 25% 10%">
+                @Html.ActionLink(file.Name, "DownloadFile", file) @Html.ActionLink("Löschen", "DeleteFile", "QuoteEvaluation", new { fileId = file.Id, quoteEvalId = Model.Id }, new { @class = "defaultbtn" })
+            </li>
+            }
+        </ul>
+    </div>
+</div>
+<p></p>
+@if (Model.Status == statusHelper.ApprovalGranted) {
+    <div>
+        <p style="font-weight:bold">Tickets</p>
+        <ul>
+            @foreach (var ticket in Model.tickets)
+            {
+                <li style="display:grid;grid-template-columns:10% 10% 15%">
+                    @Html.ActionLink(ticket.Number, "DetailsTicket", "Ticket", new { ticketId = ticket.Id }, new { onmouseover = "MouseOver(this)", onmouseout = "MouseOut(this)", style = "color:black" }) @Html.DisplayFor(Ticket => ticket.Type) @if (ticket.Type == "EHW")
+                    {
+                        string link = "http://ehwredmine01/issues/" + ticket.Number;
+                        <a href="@link" class="defaultbtn" style="transform:scale(1,0.95)">Direkt zum Ticket</a>
+                    }
+                    else if (ticket.Type == "ESW")
+                    {
+                        string link = "http://itredminewin/redmine/issues/" + ticket.Number;
+                        <a href="@link" class="defaultbtn" style="transform:scale(1,0.95)">Direkt zum Ticket</a>
+                    }                    
+                </li>   
+            }
+        </ul>
+        @Html.ActionLink("Ticket hinzufügen", "CreateTicket", "Ticket", new { quoteEvalId = Model.Id }, new { @class = "defaultbtn" })
+    </div>
+}
+
+<script type="text/javascript">
+    function ApproveOrAskForApproval(fullyEstimated, solutionId) {
+        if (fullyEstimated == 1) {
+            window.location.href = "/QuoteEvaluation/GrantApproval?quoteEvalId=@Model.Id&solutionId=" + solutionId
+        }
+        else {
+            if (window.confirm("Nicht alle Abschätzungen sind eingetragen, wollen sie die Lösung trotzdem freigeben?")) {
+                window.location.href = "/QuoteEvaluation/GrantApproval?quoteEvalId=@Model.Id&solutionId=" + solutionId
+            }
+
+        }
+
+    }
+
+</script>
+<script>
+    function MouseOver(object) {
+        object.style.color = 'blue'
+        object.style.textDecoration = 'underline'
+    }
+</script>
+<script>
+    function MouseOut(object) {
+        object.style.color = 'black'
+        object.style.textDecoration = 'underline'
+    }
+</script>

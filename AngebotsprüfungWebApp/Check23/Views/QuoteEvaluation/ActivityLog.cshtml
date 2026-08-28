@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Check23.Models.LogEntry>
+
+@{
+    ViewData["Title"] = "ActivityLog";
+}
+
+<h1>Aktivitätsprotokoll</h1>
+
+<div>
+    @Html.ActionLink("Zurück zur Angebotsprüfung", "DetailsQuoteEvaluation", "QuoteEvaluation", new { quoteEvalId = ViewBag.quoteEvalId }, new { @class="btn back" })
+</div>
+<table class="table">
+    <thead>
+        <tr>
+@*             <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Person)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Activity)
+            </th>
+@*             <th>
+                @Html.DisplayNameFor(model => model.ForeignKey_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActivityLog_id)
+            </th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+@*             <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.Person)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activity)
+            </td>
+@*             <td>
+                @Html.DisplayFor(modelItem => item.ForeignKey_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActivityLog_id)
+            </td> *@
+@*             <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td> *@
+        </tr>
+}
+    </tbody>
+</table>

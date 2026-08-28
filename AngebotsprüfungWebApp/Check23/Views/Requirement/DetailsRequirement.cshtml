@@ -1,0 +1,218 @@
+﻿@model Check23.Models.Requirement
+
+@{
+    ViewData["Title"] = "DetailsRequirement";    
+}
+<div style="display:flex">
+    <div style="align-self:flex-end;margin-bottom:10px;transform:scale(0.9);white-space:nowrap">@if (ViewBag.quoteEvalName != Model.Name)
+        {
+            @(ViewBag.quoteEvalName + " - ")
+        }
+    </div>
+    <h1>@Model.Name</h1>
+</div>
+<div>
+    <h4>Anforderung</h4>
+    <hr />
+    <div>
+        @Html.ActionLink("Anforderung bearbeiten", "EditRequirement", new { requirementId = Model.Id }, new { @class = "btn btn-dark" })
+        @Html.ActionLink("Lösung hinzufügen", "CreateSolution", "Solution", new { requirementId = Model.Id }, new { @class = "btn btn-dark" })        
+        @Html.ActionLink("Zurück zur Angebotsprüfung", "DetailsQuoteEvaluation", "QuoteEvaluation", new { quoteEvalId = Model.QuoteEvaluation_id }, new { @class = "btn back"})
+    </div>
+    <dl class="row">
+@*         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd> *@
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.Raw(Model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OrderNumber)
+        </dd>
+        <dt class="col-sm-2">
+            Zuständige Abteilungen
+        </dt>
+        <dd class="col-sm-10">
+            <table class="table" style="width:max-content">
+                <thead>
+                    <tr>
+                        <th>ESW</th>
+                        <th></th>
+                        <th>EHW</th>
+                        <th></th>
+                        <th>Andere</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>@Html.DisplayNameFor(model => model.ESW_CEETIS)</div>
+                            <div>@Html.DisplayNameFor(model => model.ESW_IVISionStudio)</div>
+                            <div>@Html.DisplayNameFor(model => model.ESW_Netstar)</div>
+                            <div>@Html.DisplayNameFor(model => model.ESW_InterneTools)</div>
+                            <div>@Html.DisplayNameFor(model => model.ESW_Other)</div>
+                        </td>
+                        <td>
+                            <div>@Html.DisplayFor(model => model.ESW_CEETIS)</div>
+                            <div>@Html.DisplayFor(model => model.ESW_IVISionStudio)</div>
+                            <div>@Html.DisplayFor(model => model.ESW_Netstar)</div>
+                            <div>@Html.DisplayFor(model => model.ESW_InterneTools)</div>
+                            <div>@Html.DisplayFor(model => model.ESW_Other)</div>
+                        </td>
+                        <td>
+                            <div>@Html.DisplayNameFor(model => model.EHW_HV_Tester)</div>
+                            <div>@Html.DisplayNameFor(model => model.EHW_Construction)</div>
+                            <div>@Html.DisplayNameFor(model => model.EHW_TPMs)</div>
+                            <div>@Html.DisplayNameFor(model => model.EHW_LV_Tester)</div>
+                            <div>@Html.DisplayNameFor(model => model.EHW_InterneTools)</div>
+                            <div>@Html.DisplayNameFor(model => model.EHW_Other)</div>
+                        </td>
+                        <td>
+                            <div>@Html.DisplayFor(model => model.EHW_HV_Tester)</div>
+                            <div>@Html.DisplayFor(model => model.EHW_Construction)</div>
+                            <div>@Html.DisplayFor(model => model.EHW_TPMs)</div>
+                            <div>@Html.DisplayFor(model => model.EHW_LV_Tester)</div>
+                            <div>@Html.DisplayFor(model => model.EHW_InterneTools)</div>
+                            <div>@Html.DisplayFor(model => model.EHW_Other)</div>
+                        </td>
+                        <td>
+                            <div>@Html.DisplayNameFor(model => model.Documentation)</div>
+                            <div>@Html.DisplayNameFor(model => model.Service)</div>
+                        </td>
+                        <td>
+                            <div>@Html.DisplayFor(model => model.Documentation)</div>
+                            <div>@Html.DisplayFor(model => model.Service)</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NotToBeCarriedOut)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NotToBeCarriedOut)
+        </dd>
+        <dt class="col-sm-2" style="border:none">
+            @Html.DisplayName("Lösungen")
+        </dt>
+        <dd class="col-sm-10" style="border:none">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Beschreibung
+                        </th>
+                        <th>
+                            Freigabe
+                        </th>
+                        <th>
+                            Zeitaufwand
+                        </th>
+                        <th>
+                            Kosten
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.solutions.Count != 0) { foreach (var solution in Model.solutions) {
+                        <tr>
+                            <td>
+                                @Html.ActionLink(solution.Name, "DetailsSolution", "Solution", new { solutionId = solution.Id }, new { onmouseover = "MouseOver(this)", onmouseout = "MouseOut(this)", @class= "hyperlink" })
+                            </td>
+                            <td>
+                                @Html.Raw(solution.Description)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(Lösung => solution.IsSelected)
+                            </td>
+                            <td>
+                                @if(!string.IsNullOrEmpty(solution.estimation.ESW_time)){<p>ESW: @Html.DisplayFor(Abschätzung => solution.estimation.ESW_time)</p>}
+                                @if(!string.IsNullOrEmpty(solution.estimation.EHW_time)){<p>EHW: @Html.DisplayFor(Abschätzung => solution.estimation.EHW_time)</p>}
+                                @if(!string.IsNullOrEmpty(solution.estimation.Documentation_time)){<p>Dokumentation: @Html.DisplayFor(Abschätzung => solution.estimation.Documentation_time)</p>}
+                                @if(!string.IsNullOrEmpty(solution.estimation.Service_time)){<p>Service: @Html.DisplayFor(Abschätzung => solution.estimation.Service_time)</p>}
+                            </td>
+                            <td>
+                                @if(!string.IsNullOrEmpty(solution.estimation.ESW_cost)){<p>ESW: @Html.DisplayFor(Abschätzung => solution.estimation.ESW_cost)</p>}
+                                @if(!string.IsNullOrEmpty(solution.estimation.EHW_cost)){<p>EHW: @Html.DisplayFor(Abschätzung => solution.estimation.EHW_cost)</p>}
+                                @if(!string.IsNullOrEmpty(solution.estimation.Documentation_cost)){<p>Dokumentation: @Html.DisplayFor(Abschätzung => solution.estimation.Documentation_cost)</p>}
+                                @if(!string.IsNullOrEmpty(solution.estimation.Service_cost)){<p>Service: @Html.DisplayFor(Abschätzung => solution.estimation.Service_cost)</p>}
+                            </td>
+                            <td>
+                                    @Html.ActionLink("Abschätzen", "ChooseEstimation", "Estimation", new { solutionId = solution.Id }, new { @class = "defaultbtn" })
+                            </td>
+                        </tr>    
+                        } }
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+</div>
+<p></p>
+<div>
+    <form asp-action="UploadFile" enctype="multipart/form-data" method="post">
+        <input type="number" name="quoteEvalId" hidden="hidden" value="@Model.Id" />
+        <input type="file" name="file" onchange="form.submit()" />
+        @* <button type="submit" class="defaultbtn">Datei hochladen</button> *@
+    </form>
+    @Html.ActionLink("Direkt zum Fileserver", "OpenExplorer", new { requirementId = Model.Id }, new { @class = "defaultbtn" })
+    <div>
+        <p style="color:green">@ViewBag.fileUploadMessage</p>
+    </div>
+</div>
+<div>
+    <ul>
+        @foreach (DatabaseFile file in Model.files)
+        {
+            <li style="display:grid;grid-template-columns: 25% 10%">
+                @Html.ActionLink(file.Name, "DownloadFile", file) @Html.ActionLink("Löschen", "DeleteFile", "Requirement", new { fileId = file.Id, requirementId = Model.Id }, new { @class = "defaultbtn" })
+            </li>
+        }
+    </ul>
+</div>
+<p></p>
+<div>
+    <div style="font-weight:bold">Kommentare</div>
+    <div>
+        @foreach(var comment in Model.comments)
+        {
+            <div>@Html.Raw(comment.Message)</div>
+            <div>@comment.Creator am @comment.Date</div>
+        }
+    </div>
+    <div>
+        @Html.ActionLink("Kommentar erstellen", "CreateRequirementComment", "Comment", new { requirementId = Model.Id }, new { @class = "defaultbtn" })
+    </div>
+</div>
+
+<script>
+    function MouseOver(object) {
+        object.style.color = 'blue'
+        object.style.textDecoration = 'underline'
+    }
+</script>
+<script>
+    function MouseOut(object) {
+        object.style.color = 'black'
+        object.style.textDecoration = 'underline'
+    }
+</script>

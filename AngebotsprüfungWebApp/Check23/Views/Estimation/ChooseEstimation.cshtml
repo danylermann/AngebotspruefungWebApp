@@ -1,0 +1,34 @@
+﻿
+<h4>
+	Wähle aus für welche Abteilung du abschätzen möchtest
+</h4>
+<div style="display:flex">
+	@if(ViewBag.esw){
+		<div style="margin-right:5px">
+				@Html.ActionLink("ESW", "EditEstimationESW", new { solutionId = ViewBag.solutionId }, new { @class = "btn btn-dark" })
+		</div>
+	}	
+	@if (ViewBag.ehw){
+		<div style="margin-right:5px">
+				@Html.ActionLink("EHW", "EditEstimationEHW", new { solutionId = ViewBag.solutionId }, new { @class = "btn btn-dark" })
+		</div>
+	}
+	@* @if(Viewbag.cde){
+		<div>
+		@Html.ActionLink("CDE", "EditEstimationCDE", new { solutionId = ViewBag.solutionId })
+	</div>
+	}*@
+	@if(ViewBag.docu){
+		<div style="margin-right:5px">
+			@Html.ActionLink("Dokumentation", "EditEstimationDocumentation", new { solutionId = ViewBag.solutionId }, new { @class = "btn btn-dark" })
+		</div>
+	}
+	@if(ViewBag.service){
+		<div style="margin-right:5px">
+			@Html.ActionLink("Service", "EditEstimationService", new { solutionId = ViewBag.solutionId }, new { @class="btn btn-dark" })
+		</div>
+	}
+	<div>
+		<a href="javascript:history.back()" class="btn back">Abbrechen</a>
+	</div>
+</div>

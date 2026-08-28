@@ -1,0 +1,56 @@
+﻿@model Check23.Models.Client
+<h4>Kunde für die Angebotsprüfung</h4>
+<div>
+    <a href="javascript:history.back()" class = "btn back">Zurück</a>
+</div>
+
+<p style="color:red">@ViewBag.errorMessage</p>
+<div>
+    <form asp-action="CreateQuoteEvaluation" asp-controller="QuoteEvaluation" method="get">
+        <select name="clientId" asp-items="@ViewBag.clientsSelectList" class="selectList">
+            <option value="">Kunde auswählen</option>
+        </select>
+        <button class="btn btn-dark" type="submit">Mit gewähltem Kunde fortfahren</button>
+    </form>
+</div>
+<p></p>
+<div>
+    <form asp-action="ProcessCreateInBetween" asp-controller="Client">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group" hidden="hidden">
+            <label asp-for="Id" class="control-label"></label>
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Location" class="control-label"></label>
+            <input asp-for="Location" class="form-control" />
+            <span asp-validation-for="Location" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Neuen Kunden erstellen und fortfahren" class="btn btn-dark" />
+        </div>
+    </form>
+</div>
+<p></p>
+<div>
+    @Html.ActionLink("Ohne Kunde fortfahren", "CreateQuoteEvaluation", "QuoteEvaluation", null, new { onmouseover = "MouseOver(this)", onmouseout = "MouseOut(this)", @class = "hyperlink" })
+</div>
+
+<script>
+    function MouseOver(object) {
+        object.style.color = 'blue'
+        object.style.textDecoration = 'underline'
+    }
+</script>
+<script>
+    function MouseOut(object) {
+        object.style.color = 'black'
+        object.style.textDecoration = 'underline'
+    }
+</script>

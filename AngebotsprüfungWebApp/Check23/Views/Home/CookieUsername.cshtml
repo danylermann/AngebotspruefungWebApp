@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "CookieUsername";
+}
+
+<h1>Windows-Username eingeben</h1>
+
+<div>
+    Damit die Seite richtig funktioniert wird ihr Windows-Username benötigt. Bitte diese im unten stehenden Feld eingeben und absenden. Dieser wird dann als Cookie gespeichert.
+</div>
+<form asp-action="SaveUsernameCookie">
+    <input name="username" required="required"/>
+    <input type="submit" value="Bestätigen" />
+</form>
+

@@ -1,0 +1,172 @@
+﻿@using Check23.Additional_Classes
+@model Check23.Models.Solution
+
+@{
+    ViewData["Title"] = "DetailsSolution";
+    Requirement requirement = ViewBag.requirement;
+    StatusHelper statusHelper = new StatusHelper();
+}
+<div style="display:flex;">
+    <div style="align-self:flex-end;margin-bottom:10px;transform:scale(0.9);white-space:nowrap;">@(ViewBag.quoteEvalName + " - ")</div>
+    <div style="align-self:flex-end;margin-bottom:10px;transform:scale(0.9);white-space:nowrap;">@(requirement.Name + " - ")</div>
+    <h1>@Model.Name</h1>
+</div>
+
+<div>
+    <h4>Lösungsvorschlag</h4>
+    <hr />
+    <div>
+        @Html.ActionLink("Bearbeiten", "EditSolution", new { solutionId = Model.Id }, new { @class = "btn btn-dark" })
+        @Html.ActionLink("Abschätzung hinzufügen/bearbeiten", "ChooseEstimation", "Estimation", new { solutionId = Model.Id }, new { @class = "btn btn-dark" })        
+        @Html.ActionLink("Zurück zur Anforderung", "DetailsRequirement", "Requirement", new { requirementId = Model.Requirement_id }, new { @class = "btn back"})
+    </div>
+    <p></p>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.Raw(Model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IsSelected)
+        </dt>
+        <dd class = "col-sm-10">            
+            @Html.DisplayFor(model => model.IsSelected) @if(!Model.IsSelected) { <button type="button" class="defaultbtn" onclick="ApproveOrAskForApproval(@ViewBag.fullyEstimated)">Lösung auswählen und Angebotsprüfung freigeben</button> } @ViewBag.approvalMessage
+        </dd>
+        
+    </dl>
+    <h5>
+        Abschätzung
+    </h5>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width:20%"></th>
+                    <th style="width:40%">Zeit</th>
+                    <th style="width:40%">Kosten</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (statusHelper.ESWRequired(requirement)){
+                    <tr>                                       
+                        <th>ESW</th>
+                        <td>@Html.DisplayFor(model => model.estimation.ESW_time) @ViewBag.timeFrameESW</td>
+                        <td>@Html.DisplayFor(model => model.estimation.ESW_cost)</td>                    
+                    </tr>
+                    @if (!string.IsNullOrEmpty(Model.estimation.ESW_time_description) || !string.IsNullOrEmpty(Model.estimation.ESW_cost_description))
+                    {
+                        <tr>
+                            <th></th>
+                            <td>@Html.Raw(Model.estimation.ESW_time_description)</td>
+                            <td>@Html.Raw(Model.estimation.ESW_cost_description)</td>
+                        </tr>
+                    }
+                }
+                @if (statusHelper.EHWRequired(requirement))
+                {
+                    <tr>
+                        <th>EHW</th>
+                        <td>@Html.DisplayFor(model => model.estimation.EHW_time) @ViewBag.timeFrameEHW</td>
+                        <td>@Html.DisplayFor(model => model.estimation.EHW_cost)</td>
+                    </tr>
+                    @if (!string.IsNullOrEmpty(Model.estimation.EHW_time_description) || !string.IsNullOrEmpty(Model.estimation.EHW_cost_description))
+                    {
+                        <tr>
+                            <th></th>
+                            <td>@Html.Raw(Model.estimation.EHW_time_description)</td>
+                            <td>@Html.Raw(Model.estimation.EHW_cost_description)</td>
+                        </tr>
+                    }
+                }
+                @if (statusHelper.DocumentationRequired(requirement))
+                {
+                    <tr>
+                        <th>Dokumentation</th>
+                        <td>@Html.DisplayFor(model => model.estimation.Documentation_time) @ViewBag.timeFrameDocumentation</td>
+                        <td>@Html.DisplayFor(model => model.estimation.Documentation_cost)</td>
+                    </tr>
+                    @if (!string.IsNullOrEmpty(Model.estimation.Documentation_time_description) || !string.IsNullOrEmpty(Model.estimation.Documentation_cost_description))
+                    {
+                        <tr>
+                            <th></th>
+                            <td>@Html.Raw(Model.estimation.Documentation_time_description)</td>
+                            <td>@Html.Raw(Model.estimation.Documentation_cost_description)</td>
+                        </tr>
+                    }
+                }
+                @if (statusHelper.ServiceRequired(requirement))
+                {
+                    <tr>
+                        <th>Dokumentation</th>
+                        <td>@Html.DisplayFor(model => model.estimation.Service_time) @ViewBag.timeFrameService</td>
+                        <td>@Html.DisplayFor(model => model.estimation.Service_cost)</td>
+                    </tr>
+                    @if (!string.IsNullOrEmpty(Model.estimation.Service_time_description) || !string.IsNullOrEmpty(Model.estimation.Service_cost_description))
+                    {
+                        <tr>
+                            <th></th>
+                            <td>@Html.Raw(Model.estimation.Service_time_description)</td>
+                            <td>@Html.Raw(Model.estimation.Service_cost_description)</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div>
+    <form asp-action="UploadFile" enctype="multipart/form-data" method="post">
+        <input type="number" name="quoteEvalId" hidden="hidden" value="@Model.Id" />
+        <input type="file" name="file" onchange="form.submit()" />
+        @* <button type="submit" class="defaultbtn">Datei hochladen</button> *@
+    </form>
+    @Html.ActionLink("Direkt zum Fileserver", "OpenExplorer", new { solutionId = Model.Id }, new { @class = "defaultbtn" })
+    <div>
+        <p style="color:green">@ViewBag.fileUploadMessage</p>
+    </div>
+</div>
+<div>
+    <ul>
+        @foreach (DatabaseFile file in Model.files)
+        {
+            <li style="display:grid;grid-template-columns: 25% 10%">
+                @Html.ActionLink(file.Name, "DownloadFile", file) @Html.ActionLink("Löschen", "DeleteFile", "Solution", new { fileId = file.Id, solutionId = Model.Id }, new { @class = "defaultbtn" })
+            </li>
+        }
+    </ul>
+</div>
+<p></p>
+<div>
+    <div style="font-weight:bold">
+        Kommentare
+    </div>
+    <div>
+        @foreach(var comment in Model.comments)
+        {
+            <div>@Html.Raw(comment.Message)</div>
+            <div>@comment.Creator am @comment.Date</div>
+        }
+    </div>
+    <div>
+        @Html.ActionLink("Kommentar erstellen", "CreateSolutionComment", "Comment", new { solutionId = ViewBag.solutionId }, new { @class = "defaultbtn" })
+    </div>
+</div>
+
+<script type="text/javascript">
+    function ApproveOrAskForApproval(fullyEstimated) {
+        if (fullyEstimated == 1) {
+            window.location.href = "/Solution/GrantApproval?solutionId=@Model.Id"
+        }
+        else 
+        {
+            if (window.confirm("Nicht alle Abschätzungen sind eingetragen, wollen sie die Lösung trotzdem freigeben?")) {
+                window.location.href = "/Solution/GrantApproval?solutionId=@Model.Id"
+            }
+
+        }
+            
+    }
+    
+</script>

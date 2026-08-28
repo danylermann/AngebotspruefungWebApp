@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\additional classes\\automaticemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:additional classes\\automaticemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-28T08:21:59.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T08:21:08.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Emailservice.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Services\\EmailService\\Emailservice.cs",
+              "RelativeDocumentMoniker": "Services\\EmailService\\Emailservice.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Services\\EmailService\\Emailservice.cs",
+              "RelativeToolTip": "Services\\EmailService\\Emailservice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T08:18:35.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-28T08:16:32.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutomaticEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Additional Classes\\AutomaticEmailSender.cs",
+              "RelativeDocumentMoniker": "Additional Classes\\AutomaticEmailSender.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Additional Classes\\AutomaticEmailSender.cs",
+              "RelativeToolTip": "Additional Classes\\AutomaticEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T07:57:08.607Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

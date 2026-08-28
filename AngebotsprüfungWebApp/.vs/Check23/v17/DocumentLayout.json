@@ -1,0 +1,310 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dlermann\\Desktop\\Check23\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\views\\requirement\\createrequirement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\views\\requirement\\createrequirement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\additional classes\\statushelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\additional classes\\statushelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\models\\requirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\models\\requirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\controllers\\requirementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\controllers\\requirementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\services\\databankaccess\\check23dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\services\\databankaccess\\check23dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\controllers\\quoteevaluationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\controllers\\quoteevaluationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\views\\quoteevaluation\\detailsquoteevaluation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\views\\quoteevaluation\\detailsquoteevaluation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\views\\quoteevaluation\\editquoteevaluation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\views\\quoteevaluation\\editquoteevaluation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\controllers\\estimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\controllers\\estimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\views\\user\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\views\\user\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\views\\shared\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\views\\shared\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\controllers\\accessgroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\controllers\\accessgroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|c:\\users\\dlermann\\desktop\\check23\\check23\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD0D284-0774-4C84-B70E-DC8B71323B42}|Check23\\Check23.csproj|solutionrelative:check23\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Check23\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Check23\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T08:27:37.314Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Emailservice.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Services\\EmailService\\Emailservice.cs",
+              "RelativeDocumentMoniker": "Check23\\Services\\EmailService\\Emailservice.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Services\\EmailService\\Emailservice.cs",
+              "RelativeToolTip": "Check23\\Services\\EmailService\\Emailservice.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T10:01:35.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatusHelper.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Additional Classes\\StatusHelper.cs",
+              "RelativeDocumentMoniker": "Check23\\Additional Classes\\StatusHelper.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Additional Classes\\StatusHelper.cs",
+              "RelativeToolTip": "Check23\\Additional Classes\\StatusHelper.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T13:12:48.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditQuoteEvaluation.cshtml",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\QuoteEvaluation\\EditQuoteEvaluation.cshtml",
+              "RelativeDocumentMoniker": "Check23\\Views\\QuoteEvaluation\\EditQuoteEvaluation.cshtml",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\QuoteEvaluation\\EditQuoteEvaluation.cshtml",
+              "RelativeToolTip": "Check23\\Views\\QuoteEvaluation\\EditQuoteEvaluation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-18T13:33:59.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DetailsQuoteEvaluation.cshtml",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\QuoteEvaluation\\DetailsQuoteEvaluation.cshtml",
+              "RelativeDocumentMoniker": "Check23\\Views\\QuoteEvaluation\\DetailsQuoteEvaluation.cshtml",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\QuoteEvaluation\\DetailsQuoteEvaluation.cshtml",
+              "RelativeToolTip": "Check23\\Views\\QuoteEvaluation\\DetailsQuoteEvaluation.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-18T13:32:47.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SolutionController.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\SolutionController.cs",
+              "RelativeDocumentMoniker": "Check23\\Controllers\\SolutionController.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\SolutionController.cs",
+              "RelativeToolTip": "Check23\\Controllers\\SolutionController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T12:49:13.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Check23DAO.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Services\\DatabankAccess\\Check23DAO.cs",
+              "RelativeDocumentMoniker": "Check23\\Services\\DatabankAccess\\Check23DAO.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Services\\DatabankAccess\\Check23DAO.cs",
+              "RelativeToolTip": "Check23\\Services\\DatabankAccess\\Check23DAO.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T07:26:33.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Check23\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Check23\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T08:43:40.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateRequirement.cshtml",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\Requirement\\CreateRequirement.cshtml",
+              "RelativeDocumentMoniker": "Check23\\Views\\Requirement\\CreateRequirement.cshtml",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\Requirement\\CreateRequirement.cshtml",
+              "RelativeToolTip": "Check23\\Views\\Requirement\\CreateRequirement.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-19T12:48:49.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Check23\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Check23\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAvwFYAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T15:53:25.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EstimationController.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\EstimationController.cs",
+              "RelativeDocumentMoniker": "Check23\\Controllers\\EstimationController.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\EstimationController.cs",
+              "RelativeToolTip": "Check23\\Controllers\\EstimationController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:54:25.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuoteEvaluationController.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\QuoteEvaluationController.cs",
+              "RelativeDocumentMoniker": "Check23\\Controllers\\QuoteEvaluationController.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\QuoteEvaluationController.cs",
+              "RelativeToolTip": "Check23\\Controllers\\QuoteEvaluationController.cs",
+              "ViewState": "AgIAAPsAAAAAAAAAAAA7wDIAAACPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:49:29.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RequirementController.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\RequirementController.cs",
+              "RelativeDocumentMoniker": "Check23\\Controllers\\RequirementController.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\RequirementController.cs",
+              "RelativeToolTip": "Check23\\Controllers\\RequirementController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwDkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:39:12.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Requirement.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Models\\Requirement.cs",
+              "RelativeDocumentMoniker": "Check23\\Models\\Requirement.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Models\\Requirement.cs",
+              "RelativeToolTip": "Check23\\Models\\Requirement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T09:20:13.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\User\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "Check23\\Views\\User\\EditUser.cshtml",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\User\\EditUser.cshtml",
+              "RelativeToolTip": "Check23\\Views\\User\\EditUser.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-28T09:06:54.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccessGroupController.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\AccessGroupController.cs",
+              "RelativeDocumentMoniker": "Check23\\Controllers\\AccessGroupController.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\AccessGroupController.cs",
+              "RelativeToolTip": "Check23\\Controllers\\AccessGroupController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwCoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:54:16.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\Shared\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Check23\\Views\\Shared\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Views\\Shared\\AccessDenied.cshtml",
+              "RelativeToolTip": "Check23\\Views\\Shared\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T07:38:36.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Check23\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Check23\\Check23\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Check23\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAACkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:49:10.161Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

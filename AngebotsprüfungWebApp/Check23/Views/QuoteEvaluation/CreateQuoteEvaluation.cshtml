@@ -1,0 +1,66 @@
+﻿@model Check23.Models.QuoteEvaluation
+
+@{
+    ViewData["Title"] = "CreateQuoteEvaluation";    
+}
+<head>
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#txt'
+        });
+    </script>
+</head>
+
+
+<h1>Neue Angebotsprüfung erstellen</h1>
+
+<h4>Angebotsprüfung</h4>
+<hr />
+<div style="color:red ">@ViewBag.errorMessage</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProcessCreate"> @* "ProcessCreate" um in Datenbank zu schreiben und auf Listenseite zurückzukehren und "AngebotsprüfungTestDetails" zum Testen der Funktion des Formulars *@
+            <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
+            <div style="display:flex">
+                <div class="form-group" style="margin-right:5px">
+                    <input type="submit" value="Erstellen" class="btn btn-dark" />
+                </div>
+                <div>
+                    <a href="javascript:history.back()" class="btn back">Abbrechen</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger" ></span>
+            </div>
+
+            <div>
+                <label asp-for="Client_id" class="control-label">Kunde</label>
+            </div>
+            <div class="form-group">
+                <select asp-for="Client_id" asp-items="@ViewBag.clientsSelectList" class="selectList">
+                    <option value="">Kunde auswählen(optional)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExternalContact" class="control-label"></label>
+                <input asp-for="ExternalContact" class="form-control" />
+                <span asp-validation-for="ExternalContact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LegalGuidelines" class="control-label"></label>
+                <input asp-for="LegalGuidelines" class="form-control" />
+                <span asp-validation-for="LegalGuidelines" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <input asp-for="OrderCategory" value="1" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

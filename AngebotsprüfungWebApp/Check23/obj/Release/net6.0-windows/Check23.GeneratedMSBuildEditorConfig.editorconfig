@@ -1,0 +1,167 @@
+is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Check23
+build_property.RootNamespace = Check23
+build_property.ProjectDir = C:\Users\dlermann\source\repos\Check23\Check23\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\dlermann\source\repos\Check23\Check23
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Client/ClientList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENsaWVudExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Client/ClientSelectionForQuoteEvaluation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENsaWVudFNlbGVjdGlvbkZvclF1b3RlRXZhbHVhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Client/CreateClient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENyZWF0ZUNsaWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Client/EditClient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEVkaXRDbGllbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Comment/CreateRequirementComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxDcmVhdGVSZXF1aXJlbWVudENvbW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Comment/CreateSolutionComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxDcmVhdGVTb2x1dGlvbkNvbW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Comment/RequirementComments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxSZXF1aXJlbWVudENvbW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Comment/SolutionComments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxTb2x1dGlvbkNvbW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Estimation/ChooseEstimation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGlvblxDaG9vc2VFc3RpbWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Estimation/EditEstimationCDE.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGlvblxFZGl0RXN0aW1hdGlvbkNERS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Estimation/EditEstimationDocumentation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGlvblxFZGl0RXN0aW1hdGlvbkRvY3VtZW50YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Estimation/EditEstimationEHW.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGlvblxFZGl0RXN0aW1hdGlvbkVIVy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Estimation/EditEstimationESW.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGlvblxFZGl0RXN0aW1hdGlvbkVTVy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/QuoteEvaluation/ActivityLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVFdmFsdWF0aW9uXEFjdGl2aXR5TG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/QuoteEvaluation/CreateDevelopmentOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVFdmFsdWF0aW9uXENyZWF0ZURldmVsb3BtZW50T3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/QuoteEvaluation/CreateQuoteEvaluation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVFdmFsdWF0aW9uXENyZWF0ZVF1b3RlRXZhbHVhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/QuoteEvaluation/DetailsQuoteEvaluation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVFdmFsdWF0aW9uXERldGFpbHNRdW90ZUV2YWx1YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/QuoteEvaluation/EditQuoteEvaluation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVFdmFsdWF0aW9uXEVkaXRRdW90ZUV2YWx1YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/QuoteEvaluation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVFdmFsdWF0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/QuoteEvaluation/SelectOrderCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVFdmFsdWF0aW9uXFNlbGVjdE9yZGVyQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Requirement/CreateRequirement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWlyZW1lbnRcQ3JlYXRlUmVxdWlyZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Requirement/DetailsRequirement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWlyZW1lbnRcRGV0YWlsc1JlcXVpcmVtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Requirement/EditRequirement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWlyZW1lbnRcRWRpdFJlcXVpcmVtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Solution/CreateSolution.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29sdXRpb25cQ3JlYXRlU29sdXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Solution/DetailsSolution.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29sdXRpb25cRGV0YWlsc1NvbHV0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Solution/EditSolution.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29sdXRpb25cRWRpdFNvbHV0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/User/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/User/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/User/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlermann/source/repos/Check23/Check23/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9d54evog1c

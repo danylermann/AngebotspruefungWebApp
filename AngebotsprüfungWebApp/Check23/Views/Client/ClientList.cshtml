@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Check23.Models.Client>
+
+@{
+    ViewData["Title"] = "ClientList";
+}
+
+<h1>Liste der Kunden</h1>
+
+<div>
+    @Html.ActionLink("Neuen Kunden erstellen", "CreateClient", null, new { @class = "btn btn-dark" })
+</div>
+<div>
+    <a href="javascript:history.back()" class="btn back">Zurück</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.ActionLink("Bearbeiten", "EditClient", item /* new { clientId = item.Id } */, new { @class="btn btn-dark" })
+                @* Feststellung: Man kann auch direkt das Objekt mitgeben anstelle der id und dann die Datenbank nach dem Objekt zu fragen. Ich weiß nicht was davon besser ist. Nicht zu empfehlen wenn man die Details aufruft die meist ausführlicher sind als die Listen. *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

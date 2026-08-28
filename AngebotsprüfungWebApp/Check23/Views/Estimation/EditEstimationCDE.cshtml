@@ -1,0 +1,57 @@
+﻿@model Check23.Models.Estimation
+
+@{
+    ViewData["Title"] = "EditEstimationESW";
+}
+<head>
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#txt'
+        });
+    </script>
+</head>
+
+<h1>Abschätzen für CDE</h1>
+
+<h4>Abschätzung</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProcessEditEstimationCDE">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div style="display:flex">
+                <div class="form-group" style="margin-right:5px">
+                    <input type="submit" value="Erstellen" class="btn btn-dark" />
+                </div>
+                <div>
+                    <a href="javascript:history.back()" class="btn back">Abbrechen</a>
+                </div>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CDE_time" class="control-label"></label>
+                <input id="txt" asp-for="CDE_time" class="form-control" />
+                <span asp-validation-for="CDE_time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CDE_cost" class="control-label"></label>
+                <input id="txt" asp-for="CDE_cost" class="form-control" />
+                <span asp-validation-for="CDE_cost" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Solution_id" class="control-label"></label>
+                <input asp-for="Solution_id" class="form-control" />
+                <span asp-validation-for="Solution_id" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

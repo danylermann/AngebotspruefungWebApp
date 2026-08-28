@@ -1,0 +1,61 @@
+﻿@model Check23.Models.User
+
+@{
+    ViewData["Title"] = "CreateUser";
+}
+
+<head>
+    <script type="text/javascript" src="~/js/multiselect-dropdown.js"></script>
+</head>
+
+<h1>Benutzer hinzufügen</h1>
+
+<h4>Benutzer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProcessCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div style="display:flex">
+                <div class="form-group" style="margin-right:5px">
+                    <input type="submit" value="Erstellen" class="btn btn-dark" />
+                </div>
+                <div>
+                    <a href="javascript:history.back()" class="btn back">Abbrechen</a>
+                </div>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <p></p>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccessGroup_Id" class="control-label"></label>
+                <select asp-for="AccessGroup_Id" asp-items="@ViewBag.accessGroupSelectList" class="selectList">
+                    <option value="">Zugriffsgruppe auswählen</option>
+                </select>
+            </div>
+            <p></p>
+            <div class="form-group">
+                <label asp-for="AreasOfResponsibility" class="control-label"></label>
+                <select asp-for="AreasOfResponsibility" asp-items="@ViewBag.areasOfResponsibilitySelectList" multiple multiselect-search="true" style="width:70%">
+                </select>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,12 @@
+﻿<h4>Auftragsart wählen</h4>
+<div style="display:flex">
+    <div style="margin-right:5px">
+        @Html.ActionLink("Angebotsprüfung", "ClientSelectionForQuoteEvaluation", "Client", null, new { @class="btn btn-dark" })
+    </div>
+    <div style="margin-right:5px">
+        @Html.ActionLink("Entwicklungsauftrag", "CreateDevelopmentOrder", "QuoteEvaluation", null, new { @class = "btn btn-dark" })
+    </div>
+    <div style="margin-right:5px">
+        <a href="javascript:history.back()" class="btn back">Abbrechen</a>
+    </div>
+</div>

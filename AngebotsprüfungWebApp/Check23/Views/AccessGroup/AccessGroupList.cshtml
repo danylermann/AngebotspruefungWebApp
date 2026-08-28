@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Check23.Models.AccessGroup>
+
+@{
+    ViewData["Title"] = "AccessGroupList";
+}
+
+<h1>Liste der Zugriffsgruppen</h1>
+
+<div>
+    @Html.ActionLink("Zugriffsgruppe hinzufügen", "CreateAccessGroup", "AccessGroup", null, new { @class="btn btn-dark" })
+    @* <a href="javascript:history.back()" class="btn back">Zurück</a> *@
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Bearbeiten","EditAccessGroup", "AccessGroup", new { accessGroupId = item.Id }, new { @class="defaultbtn" }) |
+                @Html.ActionLink("Details", "DetailsAccessGroup", "AccessGroup", new { accessGroupId = item.Id }, new { @class="defaultbtn" }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

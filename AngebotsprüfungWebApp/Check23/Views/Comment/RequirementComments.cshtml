@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Check23.Models.Comment>
+
+@{
+    ViewData["Title"] = "RequirementComments";
+}
+
+<h1>Kommentare zur Anforderung</h1>
+
+<p>
+    @Html.ActionLink("Kommentar erstellen", "CreateRequirementComment", new { requirementId = ViewBag.RequirementId }) |
+    @Html.ActionLink("Zurück zur Anforderung", "DetailsRequirement", "Requirement", new { requirementId = ViewBag.requirementId })
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Creator)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ForeignKey_id)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Creator)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.Raw(item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ForeignKey_id)
+            </td>
+            @* <td>
+                @Html.ActionLink("Kommentar erstellen", "Edit", new { /* id=item.PrimaryKey */ })
+            </td> *@
+        </tr>
+}
+        
+    </tbody>
+</table>

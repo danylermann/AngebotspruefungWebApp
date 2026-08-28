@@ -1,0 +1,284 @@
+﻿@model IEnumerable<Check23.Models.QuoteEvaluation>
+
+@{
+    ViewData["Title"] = "Index";
+    List<int> ids = new List<int>();
+    string colorBlue = "background-color:#d5eaff";
+    string colorGreen = "background-color:#d7f1c4";
+    string colorRed = "background-color:#ffb4b4";
+    foreach(var item in Model)
+    {
+        ids.Add(item.Id);
+    }
+}
+
+<h1>Alle Angebotsprüfungen</h1>
+
+<p style="display:flex">
+    <a asp-action="ClientSelectionForQuoteEvaluation" asp-controller="Client" class="btn btn-dark" style="margin-right:5px">Neue Angebotsprüfung erstellen</a>
+    <a asp-action="CreateDevelopmentOrder"  class="btn" style="background-color:forestgreen">Neuen Entwicklungsauftrag erstellen</a>
+</p>
+<table class="table"> 
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id) 
+                <div style="display:flex">
+                    <form asp-action="SortBy" method="get">
+                            @for(int i = 0; i < Model.Count(); i++)
+                            {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                            }
+                            <input hidden="hidden" name="desc" value="false"/>
+                            <input hidden="hidden" name="sortBy" value="id"/>
+                        <button type="submit" class="orderby" style="margin-left:-10px"><img src="/images/up-arrow.png" alt="Asc" class="orderby" /></button>
+                    </form>
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="true" />
+                        <input hidden="hidden" name="sortBy" value="id" />
+                        <button type="submit" class="orderby"><img src="/images/down-arrow.png" alt="Desc" class="orderby" /></button>
+                    </form>
+                </div>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+                <div style="display:flex">
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="false" />
+                        <input hidden="hidden" name="sortBy" value="name" />
+                        <button type="submit" class="orderby" style="margin-left:-9px"><img src="/images/up-arrow.png" alt="Asc" class="orderby" /></button>
+                    </form>
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="true" />
+                        <input hidden="hidden" name="sortBy" value="name" />
+                        <button type="submit" class="orderby"><img src="/images/down-arrow.png" alt="Desc" class="orderby" /></button>
+                    </form>
+                </div>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Client_id)
+                <div style="display:flex">
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="false" />
+                        <input hidden="hidden" name="sortBy" value="client_id" />
+                        <button type="submit" class="orderby" style="margin-left:-8px"><img src="/images/up-arrow.png" alt="Asc" class="orderby" /></button>
+                    </form>
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="true" />
+                        <input hidden="hidden" name="sortBy" value="client_id" />
+                        <button type="submit" class="orderby"><img src="/images/down-arrow.png" alt="Desc" class="orderby" /></button>
+                    </form>
+                </div>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Creator)
+                <div style="display:flex">
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="false" />
+                        <input hidden="hidden" name="sortBy" value="creator" />
+                        <button type="submit" class="orderby" style="margin-left:-7px"><img src="/images/up-arrow.png" alt="Asc" class="orderby" /></button>
+                    </form>
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="true" />
+                        <input hidden="hidden" name="sortBy" value="creator" />
+                        <button type="submit" class="orderby"><img src="/images/down-arrow.png" alt="Desc" class="orderby" /></button>
+                    </form>
+                </div>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+                <div style="display:flex">
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="false" />
+                        <input hidden="hidden" name="sortBy" value="date" />
+                        <button type="submit" class="orderby" style="margin-left:-6px"><img src="/images/up-arrow.png" alt="Asc" class="orderby" /></button>
+                    </form>
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="true" />
+                        <input hidden="hidden" name="sortBy" value="date" />
+                        <button type="submit" class="orderby"><img src="/images/down-arrow.png" alt="Desc" class="orderby" /></button>
+                    </form>
+                </div>
+            </th>            
+            @* <th>
+                @Html.DisplayNameFor(model => model.ExternalContact)
+                <form asp-action="SortBy" method="get">
+                    @for (int i = 0; i < Model.Count(); i++)
+                    {
+                        <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                    }
+                    <input hidden="hidden" name="desc" value="false" />
+                    <input hidden="hidden" name="sortBy" value="external_contact" />
+                    <button type="submit">Asc</button>
+                </form>
+                <form asp-action="SortBy" method="get">
+                    @for (int i = 0; i < Model.Count(); i++)
+                    {
+                        <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                    }
+                    <input hidden="hidden" name="desc" value="true" />
+                    <input hidden="hidden" name="sortBy" value="external_contact" />
+                    <button type="submit">Desc</button>
+                </form>
+            </th> *@
+            @* <th>
+                @Html.DisplayNameFor(model => model.OrderCategory)
+                <form asp-action="SortBy" method="get">
+                    @for (int i = 0; i < Model.Count(); i++)
+                    {
+                        <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                    }
+                    <input hidden="hidden" name="desc" value="false" />
+                    <input hidden="hidden" name="sortBy" value="order_category" />
+                    <button type="submit">Asc</button>
+                </form>
+                <form asp-action="SortBy" method="get">
+                    @for (int i = 0; i < Model.Count(); i++)
+                    {
+                        <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                    }
+                    <input hidden="hidden" name="desc" value="true" />
+                    <input hidden="hidden" name="sortBy" value="order_category" />
+                    <button type="submit">Desc</button>
+                </form>
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+                <div style="display:flex">
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="false" />
+                        <input hidden="hidden" name="sortBy" value="status" />
+                        <button type="submit" class="orderby" style="margin-left:-6px"><img src="/images/up-arrow.png" alt="Asc" class="orderby" /></button>
+                    </form>
+                    <form asp-action="SortBy" method="get">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <input name="quoteEvaluationIds" type="number" hidden="hidden" value="@ids[i]" />
+                        }
+                        <input hidden="hidden" name="desc" value="true" />
+                        <input hidden="hidden" name="sortBy" value="status" />
+                        <button type="submit" class="orderby"><img src="/images/down-arrow.png" alt="Desc" class="orderby" /></button>
+                    </form>
+                </div>
+            </th>
+            <th>
+                <form asp-action="Search" method="get">
+                    <input name="searchTerm" type="text"/>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="true" name="mustIncludeAll" /> Muss alle Wörter enthalten
+                    </label>
+                    <button type="submit">Suchen</button>
+                </form> @Html.ActionLink("Zurücksetzen", "Index")
+            </th>
+        </tr>
+    </thead>
+    <tbody>        
+        @if(Model != null) { foreach (var quoteEval in Model) {
+                <tr style="@(quoteEval.OrderCategory == 1 ? colorBlue : colorGreen)">
+                    <td>
+                        @Html.DisplayFor(modelItem => quoteEval.Id)
+                    </td>
+                    <td>
+                        @Html.ActionLink(quoteEval.Name, "DetailsQuoteEvaluation", new { quoteEvalId = quoteEval.Id }, new { onmouseover = "MouseOver(this)", onmouseout = "MouseOut(this)", @class = "hyperlink" })
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quoteEval.client.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quoteEval.Creator)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quoteEval.Date)
+                    </td>                    
+                    @* <td>
+                        @Html.DisplayFor(modelItem => quoteEval.ExternalContact)
+                    </td> *@
+                    @* <td>
+                        @if(quoteEval.OrderCategory == 1)
+                        {
+                            <div>Angebotsprüfung</div>
+                            
+                        }
+                        else
+                        {
+                            <div>Entwicklungsauftrag</div>
+                        }
+
+                    </td>  *@
+                    <td>
+                        @if(quoteEval.Status == 1)
+                        {
+                            <div>
+                                Neu
+                            </div>
+                        }
+                        else if(quoteEval.Status == 2)
+                        {
+                            <div>
+                                Abschätzungen vollständig
+                            </div>
+                        }
+                        else
+                        {
+                            <div>
+                                Freigegeben
+                            </div>
+                        }
+                    </td>
+                </tr>
+            } }
+    </tbody>
+</table>
+
+<script>
+    function MouseOver(object) {
+        object.style.color = 'blue'
+        object.style.textDecoration = 'underline'
+    }
+</script>
+<script>
+    function MouseOut(object) {
+        object.style.color = 'black'
+        object.style.textDecoration = 'underline'
+    }
+</script>

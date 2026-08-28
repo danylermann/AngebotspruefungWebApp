@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    int testId = 1;
+}
+
+<div  >    
+    <a asp-action="RedirectToQuoteEvaluationIndex" class="btn-dark">Zur Liste der Angebotsprüfungen</a> @* Das geht *@
+    <button type="button"  class="btn-dark" style="text-decoration:none">@Html.ActionLink("Zur Liste der Angebotsprüfungen", "Index", "QuoteEvaluation", null, new { style="text-decoration:inherit; color:white;"})</button> @* Das geht jetzt endlich *@
+    <p></p>
+    @Html.ActionLink("Zur Liste der Angebotsprüfungen", "Index", "QuoteEvaluation", null, new { type = "button", @class = "btn-dark", style = "text-decoration:none; color:white; transform: scale(1.05); padding:2px 5px" }) @* Potentielles Design für Buttons *@
+    <p></p>
+    <form method="get" asp-action="TestDetails" asp-controller="QuoteEvaluation">
+        <label>Id</label>
+        <input name="quoteEvalId" value="17" />
+        <button type="submit">zu TestDetails</button>
+    </form> @* @Html.ActionLink("TestDetails", "TestDetails", "QuoteEvaluation", new { quoteEvalId = testId }, new { type = "button", @class = "btn-dark", style = "text-decoration:none; color:white; transform: scale(1.05); padding:2px 5px" }) *@
+    <form method="get" asp-action="TestDetails2" asp-controller="QuoteEvaluation">
+        <label>Id</label>
+        <input name="quoteEvalId" value="17" />
+        <button type="submit">zu TestDetails2</button>
+    </form>
+</div>

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Check23.Models.Comment>
+
+@{
+    ViewData["Title"] = "SolutionComments";
+}
+
+<h1>Kommentare zur Lösung</h1>
+
+<p>
+    @Html.ActionLink("Kommentar erstellen", "CreateSolutionComment", new { solutionId = ViewBag.solutionId }) |
+    @Html.ActionLink("Zurück zur Lösung", "DetailsSolution", "Solution", new { solutionId = ViewBag.solutionId })
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Creator)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ForeignKey_id)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Creator)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.Raw(item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ForeignKey_id)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

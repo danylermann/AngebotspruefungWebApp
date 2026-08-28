@@ -1,0 +1,157 @@
+﻿@model Check23.Models.Requirement
+
+@{
+    ViewData["Title"] = "EditRequirement";
+}
+<head>
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#txt'
+        });
+    </script>
+</head>
+
+<h1>Anforderung bearbeiten</h1>
+
+<h4>Anforderung</h4>
+<hr />
+<div style="color:red ">@ViewBag.validationError</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProcessEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div style="display:flex">
+                <div class="form-group" style="margin-right:5px">
+                    <input type="submit" value="Speichern" class="btn btn-dark" />
+                </div>
+                <div>
+                    <a href="javascript:history.back()" class="btn back">Abbrechen</a>
+                </div>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input id="txt" asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div>
+                <table class="table" style="width:max-content">
+                    <thead>
+                        <tr>
+                            <th>ESW</th>
+                            <th></th>
+                            <th>EHW</th>
+                            <th></th>
+                            <th>Andere</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>@Html.DisplayNameFor(model => model.ESW_CEETIS)</div>
+                                <div>@Html.DisplayNameFor(model => model.ESW_IVISionStudio)</div>
+                                <div>@Html.DisplayNameFor(model => model.ESW_Netstar)</div>
+                                <div>@Html.DisplayNameFor(model => model.ESW_InterneTools)</div>
+                                <div>@Html.DisplayNameFor(model => model.ESW_Other)</div>
+                            </td>
+                            <td>
+                                <div>                                    
+                                    <input class="form-check-input" asp-for="ESW_CEETIS" />                                    
+                                </div>
+                                <div>
+                                    <input class="form-check-input" asp-for="ESW_IVISionStudio" />
+                                </div>
+                                <div>
+                                    <input class="form-check-input" asp-for="ESW_Netstar" />
+                                </div>
+                                <div>
+                                    <input class="form-check-input" asp-for="ESW_InterneTools" />
+                                </div>
+                                <div>
+                                    <input class="form-check-input" asp-for="ESW_Other" />
+                                </div>
+                            </td>                            
+                            <td>
+                                <div>@Html.DisplayNameFor(model => model.EHW_HV_Tester)</div>
+                                <div>@Html.DisplayNameFor(model => model.EHW_Construction)</div>
+                                <div>@Html.DisplayNameFor(model => model.EHW_TPMs)</div>
+                                <div>@Html.DisplayNameFor(model => model.EHW_LV_Tester)</div>
+                                <div>@Html.DisplayNameFor(model => model.EHW_InterneTools)</div>
+                                <div>@Html.DisplayNameFor(model => model.EHW_Other)</div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input class="form-check-input" asp-for="EHW_HV_Tester" />
+                                </div>
+                                <div>                                    
+                                    <input class="form-check-input" asp-for="EHW_Construction" />                                    
+                                </div>
+                                <div>                                    
+                                    <input class="form-check-input" asp-for="EHW_TPMs" />
+                                </div>
+                                <div>                                    
+                                    <input class="form-check-input" asp-for="EHW_LV_Tester" />                                    
+                                </div>
+                                <div>                                    
+                                    <input class="form-check-input" asp-for="EHW_InterneTools" />                                    
+                                </div>
+                                <div>                                    
+                                    <input class="form-check-input" asp-for="EHW_Other" />                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div>@Html.DisplayNameFor(model => model.Documentation)</div>
+                                <div>@Html.DisplayNameFor(model => model.Service)</div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input class="form-check-input" asp-for="Documentation" />
+                                </div>
+                                <div>                                    
+                                    <input class="form-check-input" asp-for="Service" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            @*             <div class="form-group form-check">
+            <label class="form-check-label">
+            <input class="form-check-input" asp-for="CDE" /> @Html.DisplayNameFor(model => model.CDE)
+            </label>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="OrderNumber" class="control-label"></label>
+                <input asp-for="OrderNumber" class="form-control" />
+                <span asp-validation-for="OrderNumber" class="text-danger"></span>
+            </div>
+            @Html.DisplayNameFor(model => model.NotToBeCarriedOut)
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="NotToBeCarriedOut" />
+                </label>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="QuoteEvaluation_id" class="control-label"></label>
+                <input asp-for="QuoteEvaluation_id" class="form-control" />
+                <span asp-validation-for="QuoteEvaluation_id" class="text-danger"></span>
+            </div>
+            <input name="oldName" value="@Model.Name" hidden="hidden" />
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

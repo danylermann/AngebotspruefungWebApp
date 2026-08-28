@@ -1,0 +1,67 @@
+﻿@model Check23.Models.Estimation
+
+@{
+    ViewData["Title"] = "EditEstimationESW";
+}
+<head>
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#txt'
+        });
+    </script>
+</head>
+
+<h1>Abschätzen für EHW</h1>
+
+<h4>Abschätzung</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProcessEditEstimationEHW">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div style="display:flex">
+                <div class="form-group" style="margin-right:5px">
+                    <input type="submit" value="Erstellen" class="btn btn-dark" />
+                </div>
+                <div>
+                    <a href="javascript:history.back()" class="btn back">Abbrechen</a>
+                </div>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EHW_time" class="control-label"></label>
+                <div style="display:flex"><input asp-for="EHW_time" type="number" class="form-control" /><select asp-for="TimeFrame" asp-items="@ViewBag.timeFrameList" style="margin: 2px"></select></div>
+                <span asp-validation-for="EHW_time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EHW_time_description" class="control-label"></label>
+                <input id="txt" asp-for="EHW_time_description" class="form-control" />
+                <span asp-validation-for="EHW_time_description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EHW_cost" class="control-label"></label>
+                <div style="display:flex"><input asp-for="EHW_cost" type="number" class="form-control" style="display:inline-block" /><div style="padding: 10px 2px">Euro</div></div>
+                <span asp-validation-for="EHW_cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EHW_cost_description" class="control-label"></label>
+                <input id="txt" asp-for="EHW_cost_description" class="form-control" />
+                <span asp-validation-for="EHW_cost_description" class="text-danger"></span>
+            </div>
+            <div class="form-group"  hidden="hidden" >
+                <label asp-for="Solution_id" class="control-label"></label>
+                <input asp-for="Solution_id" class="form-control" />
+                <span asp-validation-for="Solution_id" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

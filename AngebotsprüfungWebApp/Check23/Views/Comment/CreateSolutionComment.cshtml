@@ -1,0 +1,48 @@
+﻿@model Check23.Models.Comment
+
+@{
+    ViewData["Title"] = "CreateSolutionComment";
+}
+
+<head>
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#txt'
+        });
+    </script>
+</head>
+
+<h1>Kommentar für Lösung erstellen</h1>
+
+<h4>Kommentar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-7">
+        <form asp-action="ProcessCreateSolutionComment">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div style="display:flex">
+                <div class="form-group" style="margin-right:5px">
+                    <input type="submit" value="Erstellen" class="btn btn-dark" />
+                </div>
+                <div>
+                    <a href="javascript:history.back()" class="btn back">Abbrechen</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <input asp-for="Message" id="txt" class="form-control" />
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden="hidden">
+                <label asp-for="ForeignKey_id" class="control-label"></label>
+                <input asp-for="ForeignKey_id" value="@ViewBag.solutionId" class="form-control" />
+                <span asp-validation-for="ForeignKey_id" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
