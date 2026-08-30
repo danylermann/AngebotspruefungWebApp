@@ -8,7 +8,7 @@ namespace Check23.Services.UploadService
 {
     public class FileUploadService : IFileUploadService
     {
-        private const string fileServerPath = "C:\\Users\\dlermann\\Desktop\\TestFiles";
+        private const string fileServerPath = "C:\\Users\\User\\Desktop\\TestFiles";
         private const string uploadFolderName = "UploadedFiles";        
         private const string directAccessFilesFolderName = "DirectAccessFiles";
         public string GetUploadFolderName()

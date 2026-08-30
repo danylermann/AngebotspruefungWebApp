@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\user\\documents\\github\\angebotspruefungwebapp\\angebotspr\u00FCfungwebapp\\check23\\views\\client\\clientlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:views\\client\\clientlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\user\\documents\\github\\angebotspruefungwebapp\\angebotspr\u00FCfungwebapp\\check23\\views\\solution\\detailssolution.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:views\\solution\\detailssolution.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\user\\documents\\github\\angebotspruefungwebapp\\angebotspr\u00FCfungwebapp\\check23\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\user\\documents\\github\\angebotspruefungwebapp\\angebotspr\u00FCfungwebapp\\check23\\services\\databankaccess\\solutiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:services\\databankaccess\\solutiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\dlermann\\desktop\\angebotspr\u00FCfungwebapp\\check23\\additional classes\\automaticemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:additional classes\\automaticemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|c:\\users\\user\\documents\\github\\angebotspruefungwebapp\\angebotspr\u00FCfungwebapp\\check23\\services\\uploadservice\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA1E54FA-ECC8-05AB-D3EC-F0C040D9443E}|Angebotspr\u00FCfungWebApp.csproj|solutionrelative:services\\uploadservice\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABjAAAAAAAAAA==",
+              "Title": "ClientList.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Views\\Client\\ClientList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Client\\ClientList.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Views\\Client\\ClientList.cshtml",
+              "RelativeToolTip": "Views\\Client\\ClientList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-28T08:21:59.008Z",
+              "WhenOpened": "2026-08-30T18:07:28.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T08:21:08.168Z",
+              "Title": "DetailsSolution.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Views\\Solution\\DetailsSolution.cshtml",
+              "RelativeDocumentMoniker": "Views\\Solution\\DetailsSolution.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Views\\Solution\\DetailsSolution.cshtml",
+              "RelativeToolTip": "Views\\Solution\\DetailsSolution.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-30T18:00:40.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Emailservice.cs",
-              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Services\\EmailService\\Emailservice.cs",
-              "RelativeDocumentMoniker": "Services\\EmailService\\Emailservice.cs",
-              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Services\\EmailService\\Emailservice.cs",
-              "RelativeToolTip": "Services\\EmailService\\Emailservice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABoAAAAAAAAAA==",
+              "Title": "SolutionController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Controllers\\SolutionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SolutionController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Controllers\\SolutionController.cs",
+              "RelativeToolTip": "Controllers\\SolutionController.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAEwKAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T08:18:35.675Z",
+              "WhenOpened": "2026-08-30T17:59:59.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-28T08:16:32.491Z",
+              "Title": "SolutionDAO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Services\\DatabankAccess\\SolutionDAO.cs",
+              "RelativeDocumentMoniker": "Services\\DatabankAccess\\SolutionDAO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Services\\DatabankAccess\\SolutionDAO.cs",
+              "RelativeToolTip": "Services\\DatabankAccess\\SolutionDAO.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAALQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T17:55:43.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AutomaticEmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Additional Classes\\AutomaticEmailSender.cs",
-              "RelativeDocumentMoniker": "Additional Classes\\AutomaticEmailSender.cs",
-              "ToolTip": "C:\\Users\\dlermann\\Desktop\\Angebotspr\u00FCfungWebApp\\Check23\\Additional Classes\\AutomaticEmailSender.cs",
-              "RelativeToolTip": "Additional Classes\\AutomaticEmailSender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAARAAAAAAAAAA==",
+              "Title": "FileUploadService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Services\\UploadService\\FileUploadService.cs",
+              "RelativeDocumentMoniker": "Services\\UploadService\\FileUploadService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\Angebotspr\u00FCfungWebApp\\Check23\\Services\\UploadService\\FileUploadService.cs",
+              "RelativeToolTip": "Services\\UploadService\\FileUploadService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T07:57:08.607Z",
+              "WhenOpened": "2026-08-30T17:33:37.706Z",
               "EditorCaption": ""
             }
           ]

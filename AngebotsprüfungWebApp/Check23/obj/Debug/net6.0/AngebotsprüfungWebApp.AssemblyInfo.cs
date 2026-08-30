@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AngebotsprüfungWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d13d4e8cd5651b361bb22216feb6ab2200fa1398")]
 [assembly: System.Reflection.AssemblyProductAttribute("AngebotsprüfungWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AngebotsprüfungWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

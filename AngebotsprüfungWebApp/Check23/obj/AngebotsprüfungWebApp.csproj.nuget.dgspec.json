@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dlermann\\Desktop\\AngebotsprüfungWebApp\\Check23\\AngebotsprüfungWebApp.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\AngebotsprüfungWebApp\\Check23\\AngebotsprüfungWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dlermann\\Desktop\\AngebotsprüfungWebApp\\Check23\\AngebotsprüfungWebApp.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\AngebotsprüfungWebApp\\Check23\\AngebotsprüfungWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dlermann\\Desktop\\AngebotsprüfungWebApp\\Check23\\AngebotsprüfungWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\AngebotsprüfungWebApp\\Check23\\AngebotsprüfungWebApp.csproj",
         "projectName": "AngebotsprüfungWebApp",
-        "projectPath": "C:\\Users\\dlermann\\Desktop\\AngebotsprüfungWebApp\\Check23\\AngebotsprüfungWebApp.csproj",
-        "packagesPath": "C:\\Users\\dlermann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dlermann\\Desktop\\AngebotsprüfungWebApp\\Check23\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\AngebotsprüfungWebApp\\Check23\\AngebotsprüfungWebApp.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\AngebotspruefungWebApp\\AngebotsprüfungWebApp\\Check23\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dlermann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317\\RuntimeIdentifierGraph.json"
         }
       }
     }

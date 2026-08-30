@@ -37,18 +37,16 @@ namespace Check23.Services.EmailService
         }
         public void SendEmail(string subject, string body, HashSet<string> emailaddresses)
         {
-            var email = new MimeMessage();
-            email.From.Add(MailboxAddress.Parse(_config.GetSection("EmailUsername").Value));
-            foreach(var emailAddress in emailaddresses)
-            {
-                email.To.Add(MailboxAddress.Parse(emailAddress));
-            }
-            email.Subject = subject;
-            email.Body = new TextPart(MimeKit.Text.TextFormat.Plain) { Text = body };
-
-            using var smtp = new SmtpClient();
-            try
-            {
+            try { 
+                var email = new MimeMessage();
+                email.From.Add(MailboxAddress.Parse(_config.GetSection("EmailUsername").Value));
+                foreach(var emailAddress in emailaddresses)
+                {
+                    email.To.Add(MailboxAddress.Parse(emailAddress));
+                }
+                email.Subject = subject;
+                email.Body = new TextPart(MimeKit.Text.TextFormat.Plain) { Text = body };
+                using var smtp = new SmtpClient();                      
                 smtp.Connect(_config.GetSection("EmailHost").Value, /*587*/ 25, MailKit.Security.SecureSocketOptions.Auto); //MailKit.Security.SecureSocketOptions.StartTls
                 //smtp.Authenticate(_config.GetSection("EmailUsername").Value, _config.GetSection("EmailPassword").Value);
                 smtp.Send(email);
